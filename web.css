@@ -37,10 +37,10 @@ flex: 0 100%;
 
 .img1 {
   background-image: url("https://a0.muscache.com/im/pictures/70544624-0388-4837-be69-902ad1a6b8c5.jpg?im_w=720");
-  border-radius: 25px;
+  border-radius: 7px;
   padding-bottom: 15%;
   width: 15%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,10 +50,10 @@ flex: 0 100%;
 
 .img2 {
     background-image: url("https://a0.muscache.com/im/pictures/70544624-0388-4837-be69-902ad1a6b8c5.jpg?im_w=720");
-    border-radius: 25px;
+    border-radius: 7px;
     padding-bottom: 15%;
     width: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,10 +63,10 @@ flex: 0 100%;
 
 .img3 {
     background-image: url("https://a0.muscache.com/im/pictures/f3184ce8-b3b6-4665-beb9-72457fafee56.jpg?im_w=720");
-    border-radius: 25px;
+    border-radius: 7px;
     padding-bottom: 15%;
     width: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,10 +75,10 @@ flex: 0 100%;
 }
 .img4 {
     background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-53550055/original/eda273a9-2046-41f9-8674-0f7b2feac2e4.jpeg?im_w=720");
-    border-radius: 25px;
+    border-radius: 7px;
     padding-bottom: 15%;
     width: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,10 +88,10 @@ flex: 0 100%;
 
 .img5 {
     background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-48929626/original/a6948608-7ae0-4c7b-93b0-f2901e447d25.jpeg?im_w=720");
-    border-radius: 25px;
+    border-radius: 7px;
     padding-bottom: 15%;
     width: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,10 +101,10 @@ flex: 0 100%;
 
 .img6 {
     background-image: url("https://a0.muscache.com/im/pictures/a4d51bff-57b2-4a61-bee8-a38f4053525a.jpg?im_w=720");
-    border-radius: 25px;
+    border-radius: 7px;
     padding-bottom: 15%;
     width: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -113,10 +113,10 @@ flex: 0 100%;
 }
 .img7 {
   background-image: url("https://a0.muscache.com/im/pictures/9da940a2-82d0-4efc-808e-381292ac5321.jpg?im_w=720");
-  border-radius: 25px;
+  border-radius: 7px;
   padding-bottom: 15%;
   width: 15%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,4 +151,5 @@ html, body {
     padding: 5px;
     margin-left: 6%;
     margin-right: 6%;
+    font-size: 10px;
   }
