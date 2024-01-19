@@ -1,7 +1,6 @@
 /* Logo + header */
 header {
-  border: #2c2624 5px;
-  height: 90px;
+  height: 100px;
   width:100%;
   border-bottom: solid 1px #e1e1e1;
   position: fixed;
@@ -20,6 +19,7 @@ header {
   display: none;
 }
 .container1 {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,9 @@ header {
 .button2 {  
   font-size: 15px;
   margin-left: 7.5%;
+  min-height:0.4rem;
   height:0.4rem;
+  min-width: 21.875rem;
   width: 21.875rem;
   padding-right: 0.5% ;
   border:solid 1px #e1e1e1;
@@ -94,6 +96,7 @@ box-shadow: 10px 10px 10px -14px rgba(201,199,201,1);}
 /* Top bar below header */
 .barcontainer {
   height: 50px;
+  min-height: 50px;
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -226,14 +229,11 @@ html, body {
   h2 {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     text-align: left;
-    padding: 0 0 2% 0;
-    
-  }
+    padding: 0 0 2% 0; }
   .container3 {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     min-width: 600px;
     max-width: 1150px;
-    max-height: 400px;
     margin: 0 0 0 20%;
     font-weight: 500;
     font-size: 0.875rem;
@@ -243,7 +243,7 @@ html, body {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     min-width: 600px;
     max-width: 1150px;
-    max-height: 400px;
+    height: 100%;
     display: flex;
     flex-flow:wrap;
     justify-content: space-around;
@@ -251,6 +251,16 @@ html, body {
     background-color: rgba(245,245,245,0.8);
     font-weight: 500;
     font-size: 0.875rem;
+  }
+  .container6 {
+    display: ;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    max-height: 400px;
+    margin: 1% 0% 0% 15%;
+    background-color: rgba(245,245,245,0.8);
+    font-weight: 500;
+    font-size: 0.875rem;
+    border: 5px solid red;
   }
   .container5 {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
@@ -266,18 +276,20 @@ html, body {
 
   .footer3 {
     flex: 1 0 11%;
-    padding: 1% 5% 1% 0;
+    padding: 0.5% 5% 1% 0;
     font-size: 15px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
     background-color: rgba(245,245,245,0.8);
   }
   .footer4 {
+    border: 4px solid blue;
     flex: 1 0 22%;
     padding: 1% 5% 1% 0;
     font-size: 15px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
     background-color: rgba(245,245,245,0.8);  }
   .footer5 {
+    border: 4px solid blue;
       flex: 1 0 22%;
       padding: 1% 5% 0 0;
       font-size: 15px;
@@ -296,7 +308,7 @@ html, body {
     width: 130px;
     height: 47px;
     border-radius: 10px;
-    margin: 0 auto 2% auto;
+    margin: 0 auto 4% auto;
     background-color: rgba(0,0,0,0.8);
     color: #e1e1e1;
     font-size: 16px;
@@ -343,7 +355,7 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
-.logo, .button3, .headertxt, .pink-circle, .footer5, .button1, .button2, .bar2 {
+.logo, .button3, .headertxt, .pink-circle, .button1, .button2, .bar2 {
  display: none;
 }
 
@@ -366,21 +378,20 @@ html, body {
   font-size: 12px;
     display: flex;
     flex-flow:wrap;
-    justify-content: center;
+    justify-content: left;
     margin: 0;
+    padding: 0 0 0 3%;
     min-width: 100%;
     max-width: 100%;
     white-space: nowrap;
 }  
 .footer2 {
+  padding: 0 2% 0 0;
   height: 50px;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin: 75px auto 0 auto;
   text-align: center;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
-  width:100%;
-  padding: 0.5% 0 1.5% 1%;
 }
 .footer3 {
   flex: 1 0 33%;
@@ -388,14 +399,15 @@ html, body {
   height: 50px;
   text-align: left;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
-  width:100%;
-  padding: 0.5% 0 1.5% 1%;
-}
+  width:100%;}
+
+.footer4,  {
+  display: block;
+}  
 .container3 {
     display: inline-block;
-  width: max-content;
     overflow-x: scroll;
-  overflow-y: hidden
+  overflow-y: hidden;
 }
 .continue, h2 {
   text-align: center;
@@ -408,21 +420,11 @@ white-space: nowrap;
   text-align: left;
 }
 .barcontainer {
-  margin: 15% 0% 0% 0;
-  padding: 1% 0% 2% 0;
+  margin: 16% 0% 0% 0;
+  padding: 2% 0% 2% 0;
   border-top: none;
 }
-.button2 {
-  padding: 5px;
-  position: relative;
-  margin: 0 2%;
-  border: 1px solid ;
-  border-radius: 2rem;
-  height:40px;
-  width: 300px;
-  max-width:400px;
-  border:solid 1px #e1e1e1;
-}
+
 .container1 {
   padding: 10px;
   width: 400px;
@@ -468,12 +470,12 @@ p {
   padding-left: 10%;
   border: 1px solid ;
   border-radius: 2rem;
-  height:2.2rem;
+  height:2.9rem;
   width: 70%;
-  max-width:250px;
+  max-width:350px;
   border:solid 1px #e1e1e1;
   font-size: 13px;
-  margin: 0 auto 2% 2%;
+  margin: 1% auto 2% 4%;
 -webkit-box-shadow: 8px 9px 5px -8px rgba(0,0,0,0.5);
 -moz-box-shadow: 8px 9px 5px -8px rgba(0,0,0,0.5);
 box-shadow: 8px 9px 5px -8px rgba(0,0,0,0.5);
@@ -486,6 +488,51 @@ img {
   border-radius: 30px;
 }
 .container5 {
+  border: #FF385C 5px solid;
+  height: 200px;
   white-space: wrap;
+  display: block;
+  text-align: left;
 }
+.footer6 {
+  border: blue 5px solid;
+  text-align: left;
+  display:inline-block;
+}
+  h2 {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    text-align: left; }
+
+  body, footer {
+    overflow-x: hidden;
+  }  
+  .button6txt {
+    padding: 2% 0 0 2%
+  }
+  #support {
+    display: block;
+    text-align: left;
+    order: 1;
+  }
+    #hosting {
+    display: block;
+    text-align: left;
+    order: 2;
+  }
+    .footer4 {
+    border: 4px solid blue;
+    flex-direction: column;
+    flex: 0 1 100%;
+    padding: 1% 5% 1% 0;
+    font-size: 15px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
+    background-color: rgba(245,245,245,0.8);  }
+  .footer5 {
+    border: 4px solid blue;
+    flex-direction: column;
+      flex: 0 1 100%;
+      padding: 1% 5% 0 0;
+      font-size: 15px;
+      font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
+      background-color: rgba(245,245,245,0.8);
 }
