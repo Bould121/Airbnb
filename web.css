@@ -1,11 +1,13 @@
 /* Logo + header */
 header {
-  height: 100px;
+  height: 140px;
   width:100%;
-  border-bottom: solid 1px #e1e1e1;
   position: fixed;
   background-color: rgba(255,255,255);}
 .hiddenmag {
+  display:none
+}
+.filterbox {
   display:none
 }
 .button6 {
@@ -101,7 +103,7 @@ box-shadow: 10px 10px 10px -14px rgba(201,199,201,1);}
   overflow-x: scroll;
   overflow-y: hidden;
   position: fixed;
-  margin: 75px auto 0 auto;
+  margin: 75px auto 0 ;
   text-align: center;
   font-size: 0.75rem;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
@@ -158,14 +160,13 @@ box-shadow: 10px 10px 10px -14px rgba(201,199,201,1);}
 
 /* Images and main body */
 main  {
-  padding-top: 10%;
+  padding: 10% 2% 0 2%
 }
 .flex {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 25px;}
-
 
 .img1 {
   width: 270px;
@@ -230,7 +231,8 @@ html, body {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     text-align: left;
     padding: 0 0 2% 0;
-    font-size: 22px; }
+    font-size: 22px;
+    margin: 0 0 0 20%; }
   .container3 {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     min-width: 600px;
@@ -253,26 +255,12 @@ html, body {
     font-weight: 500;
     font-size: 0.875rem;
   }
-  .container6 {
-    display: ;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-    max-height: 400px;
-    margin: 1% 0% 0% 15%;
-    background-color: rgba(245,245,245,0.8);
-    font-weight: 500;
-    font-size: 0.875rem;
-    border: 5px solid red;
-  }
+
   .container5 {
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-    height: 100%!important;
-    min-width: 600px;
-    max-width: 1120px;
-    text-align: left;
-    margin: 0% 0% 0% 20%;
-    padding: 1% 0 1% 0;
-    font-size: 0.775rem;
-    background-color: rgba(245,245,245,0.8);
+  display: inline;
+  float: left;
+  margin: 0 19.5% ;
+  background-color: rgba(245,245,245,0.8);
   }
 
   .footer3 {
@@ -294,6 +282,19 @@ html, body {
       font-size: 15px;
       font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
       background-color: rgba(245,245,245,0.8);
+  }
+  #fflex1 {
+    display: inline;
+    background-color: rgba(245,245,245,0.8);
+  }
+   #fflex2 {
+    display: inline;
+  }
+   #fflex3 {
+    display: inline;
+  }
+   #fflex4 {
+    display: inline;
   }
   .continue {
     display: block;
@@ -340,7 +341,8 @@ html, body {
   .bottomborder {
     width:100%;
     border-bottom: solid 1px #e1e1e1;
-    padding: 2% 0 0% 0;
+    padding: 2% 0 2% 0;
+    margin: 0 0 2%;
     
     }
 
@@ -354,22 +356,28 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
-.logo, .button3, .headertxt, .pink-circle, .button1, .button2, .bar2, .showmore, .continue {
+.logo, .button3, .headertxt, .pink-circle, .button1, .button2, .bar2, .showmore, .continue, .bottomimgs {
  display: none;
 }
 ::-webkit-scrollbar {
     height: 0px;
 }
+.filterbox {
+  display: inline-block;
+  border-radius: 50px;
+  border: 1px solid #B0B0B0;
+  padding: 0.8rem;
+  margin: 0 10% 4.5% auto;
+}
+.bar {
+  padding:
+}
 .flex {
   display: block;
   width: 90%;
   margin: 0 auto;
-  max-width: 400px;}  
+  max-width: 600px;
 }
-.footer {
-  margin: left;
-  flex: 1 0 10%;
-}  
 .footer, .container2, .container3, .container4, .container5 {
   text-align: center;
   font-size: 12px;
@@ -405,10 +413,9 @@ html, body {
     display: inline-block;
     overflow-x: scroll;
   overflow-y: hidden;
-}
-.continue, h2 {
-  text-align: center;
-  font-size: 16px;
+  margin-bottom: 5%;
+  padding-bottom: 4%;
+  border-bottom: 1px solid #e1e1e1;
 }
 span {
 white-space: nowrap;
@@ -417,15 +424,16 @@ white-space: nowrap;
   text-align: left;
 }
 .barcontainer {
-  margin: 18% 0% 0% 0;
-  padding: 2% 0% 2% 0;
+  margin: 20% auto;
+  padding: 1% 0% 2% 0;
   border-top: none;
+  width: 95%;
 }
 
 .container1 {
   padding: 10px;
-  width: 400px;
-  height: 60px;
+  width: 100%;
+  height: 100px;
   position: fixed;
   margin: 0;
   padding: 5px;
@@ -436,8 +444,8 @@ white-space: nowrap;
 }
 .img1hidden {
   display: block;
-  object-fit: cover;
-  border-radius: 30px;
+  object-fit: contain;
+  border-radius: 10px;
 
 }
 #hide {
@@ -455,11 +463,8 @@ main  {
   left: 15px;
   bottom: 14px;
   overflow: hidden;
-  white-space: nowrap;
-}
-p {
-  text-align: left;
-}
+  white-space: nowrap;}
+
 .button6 {
   display: block;
   position: fixed;
@@ -467,39 +472,28 @@ p {
   border: 1px solid ;
   border-radius: 2rem;
   height:3.2rem;
-  width: 70%;
-  max-width:350px;
+  width: 60%;
+  max-width:400px;
   border:solid 1px #e1e1e1;
   font-size: 13px;
-  margin: 4% auto 2% 4%;
+  margin: 0% auto 6% 4%;
 -webkit-box-shadow: 8px 9px 5px -8px rgba(0,0,0,0.5);
 -moz-box-shadow: 8px 9px 5px -8px rgba(0,0,0,0.5);
-box-shadow: 8px 9px 5px -8px rgba(0,0,0,0.5);
-}
- p {
+box-shadow: 8px 9px 5px -8px rgba(0,0,0,0.5);}
+
+p {
   display: block;
   text-align: left;
 }
 img {
-  border-radius: 30px;
-}
-.container5 {
-  border: #FF385C 5px solid;
-  height: 200px;
-  white-space: wrap;
-  display: block;
-  text-align: left;
-}
-.footer6 {
-  border: blue 5px solid;
-  text-align: left;
-  display:inline-block;
+  border-radius: 10px;
 }
   h2 {
     font-size: 22px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     text-align: left;
-    padding: 6% 0 5% 3% }
+    padding: 6% 0 5% 3%;
+    margin: auto; }
 
   body, footer {
     overflow-x: hidden;
@@ -538,7 +532,51 @@ img {
       font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
       background-color: rgba(245,245,245,0.8);
 }
+  .footer6 {
+    flex-direction: column;
+      flex: 0 1 100%;
+      padding: 0% 5% 3% 3%;
+      font-size: 15px;
+      font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
+      background-color: rgba(245,245,245,0.8);
+}
 .bottomborder {
   display: none;
 }
+#fflex1 {
+  padding-top: 5%;
+  border-top: 1px solid #e1e1e1;
+}
+#fflex1 {
+
+    display: block;
+    text-align: left;
+    order: 0;
+    margin: 6% 0 0 0;
+    
+}
+#fflex2 {
+    display: block;
+    text-align: left;
+    order: 1;
+    padding: 3% 0 0  0;
+    margin: 0;
+}
+#fflex3 {
+    display: block;
+    text-align: left;
+    order: 3;
+    padding: 3% 0 0 0;
+    margin: 0;
+}
+#fflex4 {
+      display: block;
+    text-align: left;
+    order: 3;
+    padding: 3% 0 3% 0;
+    margin: 0;
+}
+.footer6 > img {
+  display: none;
+} 
 }
