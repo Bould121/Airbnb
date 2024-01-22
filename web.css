@@ -341,7 +341,7 @@
     border: transparent;}
   
   @media only screen and (max-width: 600px) {
-  .logo, .button3, .headertxt, .pink-circle, .button1, .button2, .bar2, .showmore, .continue, .bottomimgs {
+  .logo, .button3, .headertxt, .pink-circle, .button1, .button2, .bar2, .bottomimgs {
     display: none;}
 
   ::-webkit-scrollbar {
